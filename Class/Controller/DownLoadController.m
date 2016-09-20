@@ -29,7 +29,7 @@
         [self showAlertView:@"请输入下载链接"];
         return;
     }
-    
+    NSLog(@"test commit");
     NSString *lastcom = [_txtUrl.text lastPathComponent];
     
     NSString *multiPath = NSHomeDirectory();
