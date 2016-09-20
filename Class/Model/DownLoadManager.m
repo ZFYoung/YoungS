@@ -37,7 +37,7 @@
         AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
         operation.inputStream   = [NSInputStream inputStreamWithURL:url];
         operation.outputStream  = [NSOutputStream outputStreamToFileAtPath:fileName append:NO];
-        
+        NSLog(@"dddddd");
         //下载进度控制
         
          [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
